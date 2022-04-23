@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: hsl(0, 0%, 98%);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    margin: 100px 20px;
+}
+.heading {
+    margin-bottom: 70px;
+    text-align: center;
+}
+.heading p:first-child, h1 {
+    font-size: 1.5rem;
+    padding:2px 0;
+    color:hsl(234, 12%, 34%);
+}
+
+.heading h1 {
+padding-bottom: 22px;
+font-size: 25px;
+}
+.heading p:last-child {
+    color:hsl(229, 6%, 66%);
+}
+.wraper {
+    display: grid;
+    row-gap: 20px;
+}
+.wraper h2 {
+    color:hsl(234, 12%, 34%);
+}
+.wraper p{
+    color:hsl(229, 6%, 66%);
+}
+.supervisor {
+    padding: 20px 30px;
+    background: white ;
+    border-radius: 10px;
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.supervisor p {
+    font-size: 13px;
+}
+.supervisor img {
+   float: right;
+   padding-top: 40px;
+}
+.team-builder {
+    padding: 20px 30px;
+    background: white;
+    border-radius: 10px;
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.team-builder p {
+    font-size: 13px;
+}
+.team-builder img {
+   float: right;
+   padding-top: 40px;
+}
+.karma {
+    padding: 20px 30px;
+    background: white;
+    border-radius: 10px;
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.karma p {
+    font-size: 13px;
+}
+.karma img {
+   float: right;
+   padding-top: 40px;
+}
+.calculator {
+    background: white;
+    padding: 20px 32px;
+    border-radius: 10px;
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.calculator p {
+    font-size: 13px;
+}
+.calculator img {
+   float: right;
+   padding-top: 40px;
+}
+@media  screen and (min-width:375px) {
+    
+    .container {
+        margin: 100px;
+    }
+    .heading {
+        width: 550px;
+        margin:70px auto;
+    }
+    .heading p:first-child{
+        font-size: 2.3rem;
+    }
+    .heading h1 {
+        font-size: 2.4rem;
+    }
+    .heading p:last-child {
+        font-size: 1rem;
+    }
+    .wraper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .team-builder{
+        grid-column: 2/3;
+    }
+    .karma {
+        grid-column: 2/3;
+    }
+    .supervisor {
+        position:relative;
+        top: 55%;
+    }
+    .calculator {
+        position:relative;
+        top: -53%;
+    }
+}
